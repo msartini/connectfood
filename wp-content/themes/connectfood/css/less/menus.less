@@ -1,0 +1,155 @@
+@import "../../library/less/navbar.less";
+
+// Base class and wrapper
+.navbar {
+  overflow: visible;
+  margin-bottom: @baseLineHeight;
+  color: @navbarText;
+  background: none;
+
+  // Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
+  *position: relative;
+  *z-index: 2;
+}
+
+// Inner for background effects
+// Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
+.navbar-inner {
+  border: none;
+  background-image: none;
+  background-color: @navbarBackground;
+  background: none;
+  .clear-box-shadow();
+}
+
+// Links
+.navbar .nav > li > a {
+  color: @navbarLinkColor;
+}
+
+
+// Menú principal, no topo do portal
+header[role="banner"] .main-navbar {
+  margin-top: 0;
+  margin-bottom: 0;
+  .navbar-inner {
+    .clear-border-radius();
+    background-color: @grayDark;
+    min-height: 34px;
+    height: 34px;
+    .nav {
+      .pull-right;
+      li {
+        line-height: @baseLineHeight / 2;
+        // Links
+        a {
+          border-right: 1px solid @white;
+          margin: 10px 7px 10px 0;
+          padding: 0 7px 0 0;
+          color: @white;
+          font-size: 12px;
+          .clear-text-shadow();
+        }
+        &.active {
+          a {
+            background-color: transparent;
+          }
+        }
+        &.menu-item-last a {
+          border-right: none;
+          margin-right: 0;
+          padding-right: 0;
+        }
+      }
+
+      &.nav-idiomas {
+        margin-right: 25px;
+        li > a {
+          color: @navbarLinkColor;
+          text-transform: uppercase;
+          font-weight: normal;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Menú com as páginas principais do portal
+.application-navbar .navbar-inner {
+  background-color: @fozRed !important;
+  .box-shadow(0 12px 8px -5px @grayDark);
+  .nav {
+    margin: 0;
+    margin-bottom: -2px;
+    padding-bottom: 7px;
+    li {
+      a {
+        padding: 0 10px 3px 10px;
+        color: @white;
+        font-family: @odebrechtSansFamily;
+        .clear-text-shadow();
+      }
+      &.active {
+        border-bottom: 2px solid @white;
+        a {
+          color: @white;
+          background: none;
+          .clear-box-shadow();
+          .clear-text-shadow();
+        }
+      }
+      &.current-page-ancestor{
+        border-bottom: 2px solid @white;
+        a {
+          color: @white;
+          background: none;
+          .clear-box-shadow();
+          .clear-text-shadow();
+        }
+      }
+    }
+  }
+}
+
+// Menu lateral
+.side-menu {
+  border-top: 2px solid @fozRed;
+  margin-bottom: 35px;
+
+  .list-menu {
+    margin: 25px 0 25px 20px;
+
+    li {
+      line-height: 35px;
+      &.active{
+        a{
+          color: @fozRed;
+        }
+      }
+    }
+
+
+    &:after {
+      content: " ";
+      margin-top: 25px;
+      margin-left: -20px;
+      .bg-diagonal;
+    }
+  }
+  div.imagem {
+    img {
+      height: auto;
+      max-width: 100%;
+      margin-top: 25px;
+    }
+  }
+}
+
+.menu-ancora {
+  background-color: #e9e9e9;
+
+}

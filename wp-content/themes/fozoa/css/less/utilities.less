@@ -1,0 +1,126 @@
+@import "../../library/less/utilities.less";
+
+// Classes utilitárias
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+// Container para os botões de compartilhamento do Facebook Twitter e Impressora
+.share-container {
+  margin-bottom: 17px;
+  .clearfix;
+  .share-item {
+    margin-right: 20px;
+    .pull-left;
+  }
+}
+
+// Container de mapas
+.map-container {
+  margin-left: 0px;
+  header {
+    margin-left: 0px;
+    h3, h4 { 
+      font-size: 16px;
+      margin: 0;
+      line-height: 16px;
+      color: @white;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 0;
+      line-height: 16px;
+      color: @fozRed;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    &.bg-red {
+      padding: 16px 26px;
+    }
+  }
+
+
+
+  footer {
+    width: 308px;
+    top: -8px;
+    border: 1px solid @grayDark;
+    border-top: none;
+    
+    ul {
+      min-height: 55px;
+      margin: 0;
+
+      li {
+        margin-top: 13px;
+      }
+    }
+
+    &.bg-gray {
+      padding-right: 40px;
+    }
+
+  }
+}
+  footer.map-area-de-atuacao {
+      width: 928px;
+    }
+.side-menu { 
+  &:after {
+    margin-top: 0px;
+  }
+  .imagem {
+    img {
+      margin-top: 25px;
+    }
+  }
+}
+
+span.bg-agua-e-esgoto {
+  margin-left: 54px;
+  margin-bottom: 20px;
+}
+
+
+.box-image {
+  div.img-residuos {
+    margin-left: 20px;
+    img {
+      width: 640px;
+      height: 87px !important;
+    }
+    margin-bottom: 20px;
+  }
+
+  div.img-utilities {
+    margin-left: 20px;
+    img {
+      width: 640px;
+      height: 87px !important;
+    }
+    margin-bottom: 20px;
+  }
+
+}
+
+div.accordion {
+  div.accordion-group {
+    div.accordion-heading {
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+}

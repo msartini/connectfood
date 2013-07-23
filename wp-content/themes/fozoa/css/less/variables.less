@@ -1,0 +1,51 @@
+@import "../../library/less/variables.less";
+
+// Custom colors
+// -------------------------
+@fozGray:                       #e9e9e9;
+@fozBlue:                       #00adc6;
+@fozRed:                        #eb2438;
+@grayDark:                      #919395;
+@menuGray:                      #75787b;
+
+
+// Links
+// -------------------------
+@linkColor:                     @textColor;
+
+// Scaffolding
+// -------------------------
+@bodyBackground:                @white;
+@textColor:                     @grayDark;
+
+// Typography
+// -------------------------
+@sansFontFamily:                Arial, "Helvetica Neue", Helvetica, sans-serif;
+@odebrechtSansFamily:           "Odebrecht Sans", "Tahoma";
+@odebrechtSansBoldFamily:       "Odebrecht Sans Bold", "Tahoma Bold";
+@odebrechtSansItalicFamily:     "Odebrecht Sans Italic", "Tahoma Italic";
+@odebrechtSansBoldItalicFamily: "Odebrecht Sans Bold Italic", "Tahoma Bold Italic";
+
+@headingsFontFamily:            @odebrechtSansBoldFamily; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:            normal;    // instead of browser default, bold
+@headingsColor:                 @fozRed; // empty to use BS default, @textColor
+
+@baseFontSize:                  14px;
+@baseLineHeight:                26px;
+
+// Navbar
+// -------------------------
+// @navbarBackground:              @white;
+// @navbarBackgroundHighlight:     @white;
+@navbarBorder:                  @white;
+
+@navbarText:                    @grayDark;
+@navbarLinkColor:               @grayDark;
+
+@navbarLinkColorActive:         @fozRed;
+@navbarLinkBackgroundActive:    @navbarBackground;
+
+// Buttons
+// -------------------------
+@btnDangerBackground:           lighten(@fozRed, 15%);
+@btnDangerBackgroundHighlight:  @fozRed;

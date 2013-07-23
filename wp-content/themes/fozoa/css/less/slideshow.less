@@ -1,0 +1,49 @@
+div.slideshow_container {
+  height: 380px; 
+  margin-bottom: 30px;
+
+  // Conteúdos do slideshow
+  .slideshow_content {
+    h2 {
+      display: none;
+      font-family: @odebrechtSansFamily;
+      text-align: left;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin: 10px 35px 0 35px;
+      padding: 0;
+    }
+    .slideshow_view {
+      // Texto descritivo de cada imagem
+      .slideshow_description{
+        background: @fozRed;
+        height: 23px;
+        top: 357px !important;
+        opacity: 1.0;
+        p {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .slideshow_pagination {
+    bottom: 50px;
+  }
+}
+
+.blue div.slideshow_container .slideshow_content .slideshow_view .slideshow_description{
+  background: @fozBlue;
+}
+
+.quem-somos-slideshow {
+  .slideshow_content {
+    .slideshow_view {
+      // Texto descritivo de cada imagem
+      div.slideshow_description{
+        top: 357px !important;
+      }
+    }
+  }
+}

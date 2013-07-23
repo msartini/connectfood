@@ -1,0 +1,29 @@
+.areas-de-atuacao {
+  #areas {
+    margin-top: 22px;
+    section {
+      img {
+        width: 100%;
+      }
+
+      footer {
+        background-color: @fozGray;
+
+      }
+      footer.desc-content {
+        width: 100% !important;
+        height: 130px;
+        overflow: hidden;
+        > div{
+          padding: 20px 10px 10px 20px;
+          height: 130px;
+          overflow: hidden;
+        }
+      }
+      &:after {
+        content: " ";
+        .bg-diagonal;
+      }
+    }
+  }
+}

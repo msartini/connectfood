@@ -1,0 +1,35 @@
+@import "../../library/less/breadcrumb.less";
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+#main {
+  .breadcrumb {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: @white;
+    position: relative;
+    top: -20px;
+    .border-radius(4px);
+    li {
+      display: inline-block;
+      .ie7-inline-block();
+      .uppercase;
+      font-family: @odebrechtSansFamily;
+      font-size: 20px;
+    }
+    .divider {
+      padding: 0 5px;
+      color: @textColor;
+      font-size: 20px;
+    }
+    .active {
+      font-family: @odebrechtSansBoldFamily;
+      color: @fozRed;
+      a {
+        color: @fozRed;
+      }
+    }
+  }
+}

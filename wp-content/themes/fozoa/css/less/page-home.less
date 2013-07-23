@@ -1,0 +1,110 @@
+.home {
+  .pagecontent {
+    margin-top: 0px;
+  }
+
+  .section-feature {
+    h4, h3, h2 {
+      color: @textColor;
+      font-size: 16px;
+
+      span {
+        margin-left: 13px;
+        margin-bottom: 2px;
+        display: block;
+        font-family: @odebrechtSansFamily;
+        .uppercase;
+      }
+
+      img {
+        border-top: 2px solid @fozRed;
+      }
+
+      &:after {
+        content: " ";
+        .bg-diagonal;
+      }
+    }
+
+    ul {
+      margin: 22px 0 0 13px;
+
+      li {
+        .clearfix;
+        line-height: 18px;
+        margin-bottom: 18px;
+        max-height: 67px;
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    article {
+      margin-bottom: 10px !important;
+      padding: 0;
+      border-bottom: 1px solid @grayDark;
+      height: 250px;
+      min-height: 250px;
+    }
+  }
+
+  div.slideshow_container {
+    .slideshow_content {
+      h2 {
+        display: block;
+      }
+      .slideshow_view {
+        .slideshow_slide {
+          height: 376px;
+        }
+        
+        .slideshow_description {
+          height: 56px;
+          text-align: left;
+          top: 324px !important;
+
+          p {
+            text-align: left;
+            margin-left: 35px;
+            margin-right: 35px;
+          }
+        }
+      }
+    }
+
+    .slideshow_pagination {
+      bottom: 83px;
+    }
+  }
+
+  .contato-info {
+    margin-top: 25px;
+
+    article {
+      // width: 459px;
+      // height: 117px;
+      background-color: @fozRed;
+      padding: 15px 12px !important;
+
+      img {
+        margin-right: 22px;
+      }
+
+      a, h2 {
+        color: @white;
+        text-decoration: none;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 4opx;
+      }
+
+      p {
+        line-height: 14px;
+      }
+    }
+  }
+}

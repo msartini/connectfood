@@ -1,0 +1,101 @@
+
+/* dropdown menus */
+div.menu {
+	text-transform: none;
+	position: absolute;
+	text-align: left;
+	background-color: #ffffff;
+	margin:0;
+	left:10px;
+}
+
+div.new-menu {
+	display: none;
+}
+div.menu ul {
+	/* (en|de) Bugfix:IE - Doubled Float Margin Bug */
+	display:inline;
+	float:left; /* LTR */
+}
+div.menu li {
+		/* (en|de) Bugfix:IE - Doubled Float Margin Bug */
+		display:inline;
+		float:left; /* LTR */
+		font-size:1.0em;
+		line-height:1em;
+		list-style-type:none;
+		padding:0;
+}
+div.menu h2 {
+	margin: 8px 0 4px 0;
+	padding: 8px 4px 0 4px;
+}
+div.menu a {
+	    color: #ED0436;
+    display: block;
+    padding: 4px 8px;
+	
+}
+div.menu a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+
+/* Categories
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+*/
+div.cat-menu {
+	width: 560px;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 1px solid #D6D6D6;
+	left:10px;
+
+}
+div.cat-menu ul {
+	float: left;
+	width: 90px;
+}
+#validation-error {
+	color: #d00;
+	border-color: #d00;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+	padding: 8px 16px;
+	font-size: 18px;
+	display: none;
+}
+div.cat-menu ul {
+	padding: 8px 20px;
+}
+div.cat-menu li {
+	padding: 0.1em 0;
+}
+div.cat-menu h2 {
+	border-bottom: 1px solid #AAA;
+	margin: 8px 0px 0.25em;
+	padding-top: 8px;
+}
+
+div.cat-menu a {
+		float: left;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-transform:capitalize;
+		padding: 0px 20px;
+		width: 100px;
+		background: #FFF;
+		}
+
+div.cat-menu ul li a{
+		float: left;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-transform:capitalize;
+		padding: 0px 20px;
+		width: 90px;
+		background: #FFF;
+		}
+		
+	

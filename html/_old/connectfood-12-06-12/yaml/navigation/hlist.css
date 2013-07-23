@@ -1,0 +1,162 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * (en) Horizontal list navigation "hlist"
+ * (de) Horizontale Navigationsliste "hlist"
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         v4.0.1
+ * @revision        $Revision: 724 $
+ * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sa, 03 Mrz 2012) $
+ */
+
+@media all {
+
+	.ym-hlist {
+		/* (en) containing floats in IE */
+		/* (de) Einfassen der Floats im IE */
+		width:100%;
+		overflow:hidden;
+		/* (en|de) Bugfix:IE - collapsing horizontal margins */
+		position:relative;
+		line-height:1em;
+	}
+
+	.ym-hlist ul {
+		margin:0;
+		padding: 0.5em 0.5em;
+		/* (en|de) Bugfix:IE - Doubled Float Margin Bug */
+		display:inline;
+		float:left; /* LTR */
+	}
+
+	.ym-hlist ul li {
+		/* (en|de) Bugfix:IE - Doubled Float Margin Bug */
+		display:inline;
+		float:left; /* LTR */
+		font-size:1.0em;
+		line-height:1em;
+		list-style-type:none;
+		margin: 0 .25em 0 0;
+		padding:0;
+	}
+
+	.ym-hlist ul li a,
+	.ym-hlist ul li strong {
+		background:transparent;
+		color:#aaa;
+		display:block;
+		font-size:1em;
+		line-height: 2em;
+		padding: 0 0.9em;
+		font-weight:normal;
+		text-decoration:none;
+		width:auto;
+		font-family: 'UniversLTStd59UltraCnRegular';
+		font-size:30px;
+		color: #8F8F8F;
+		text-transform: uppercase;
+		background: url(../../images/icon-triangle.png) no-repeat 92% 50%;
+	}
+
+	.ym-hlist ul li a:focus,
+	.ym-hlist ul li a:hover,
+	.ym-hlist ul li a:active  {
+		color: #666;
+		background: url(../../images/icon-triangle.png) no-repeat 92% 50% #CCC;
+		-webkit-border-radius: 0.2em 0.2em 0em 0em;
+		-moz-border-radius: 0.2em 0.2em 0em 0em;
+		border-radius: 0.2em 0.2em 0em 0em;
+		text-decoration:none;
+		outline: 0 none;
+	}
+
+	.ym-hlist ul li.active {
+		background:#666;
+		background:#FFF;
+		-webkit-border-radius: 0.2em 0.2em 0em 0em;
+		-moz-border-radius: 0.2em 0.2em 0em 0em;
+		border-radius: 0.2em 0.2em 0em 0em;
+		color: #fff;
+	}
+
+	.ym-hlist ul li.active strong,
+	.ym-hlist ul li.active a:focus,
+	.ym-hlist ul li.active a:hover,
+	.ym-hlist ul li.active a:active {
+		background:transparent;
+		color:#666;
+		text-decoration:none;
+
+	}
+
+
+	/* search form -------------------------------------- */
+
+	.ym-searchform {
+    display: inline;
+    float: right;
+    line-height: 2em;
+	width:740px;
+	margin: 50px 0 0 0;
+}
+
+.space-search{
+	width:20px;
+	float:left;
+	padding:5px 10px 0 15px;
+	color:#666;
+	
+	}
+
+.ym-searchfield{
+	float:left;
+	width: 200px;
+	background: url(../../images/icon-search.png) no-repeat 6px 9px #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-top: 1px solid #AAAAAA;
+    padding: 6px 25px 8px;
+	
+
+	}
+	
+.ym-locfield{
+	float:left;
+	width: 320px;
+	background: url(../../images/icon-triangle.png) no-repeat 95% 50% #FFF;
+    border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-top: 1px solid #AAAAAA;
+    padding: 6px 12px 8px;
+	
+	}
+		
+
+.ym-searchbutton{
+	background-color: #F42230;
+    border: medium none;
+    border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 17px;
+    margin: 0px 0 0 10px;
+    padding: 4px 12px;
+	font-family: 'UniversLTStd59UltraCnRegular';
+	text-transform: capitalize;
+	letter-spacing:1px;
+	
+	}
+	
+
+	}
+}

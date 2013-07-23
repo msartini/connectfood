@@ -1,0 +1,45 @@
+@import "../../library/less/type.less";
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeight;
+  color: @headingsColor;
+}
+
+h3 { font-size: 20px; line-height: 40px; }
+
+// Emphasis & misc
+// -------------------------
+.text-blue {
+  color: @fozBlue;
+}
+
+.text-red {
+  color: @fozRed;
+}
+
+.text-gray {
+  color: @menuGray;
+}
+
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul.inline,
+ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.inline > li,
+ol.inline > li {
+  display: inline-block;
+  *display: inline;
+  padding-right: 5px;
+  padding-left: 5px;
+  *zoom: 1;
+}

@@ -1,0 +1,50 @@
+@import "../../library/less/navbar.less";
+
+header[role="banner"] {
+  margin-bottom: 10px;
+  .application-header {
+    position: relative;
+    padding-top: 30px;
+    .bg-header;
+
+    .main-logo {
+      max-width: 204px;
+      max-height: 71px;
+      display: block;
+    }
+
+    .main-search-form { 
+      position: absolute;
+      bottom: 55px;
+      right: 55px;
+
+      form#searchform, .input-append, input#s {
+        margin-bottom: 0;
+      }
+
+      form#searchform {
+        input#s {
+          color: #808080;
+          font-size: 13px;
+          width: 225px;
+          height: 20px;
+          width: 213px;
+          background-color: @fozGray;
+          .text-center;
+          .clear-border-radius();
+        }
+
+        .btn {
+          background-image: none;
+          background-color: @grayDark;
+          border: none;
+          height: 30px;
+          .clear-border-radius();
+        }
+      }
+    }
+  }
+  div.application-navbar {
+    margin-top: -2px;
+  }
+}
