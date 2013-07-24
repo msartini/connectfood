@@ -16,15 +16,19 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+// define('DB_NAME', 'africam6_food');
+define('DB_NAME', 'connectfood');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+// define('DB_USER', 'africam6_food');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+// define('DB_PASSWORD', 'jpxk2310');
+define('DB_PASSWORD', '13245');
 
 /** MySQL hostname */
+// define('DB_HOST', 'africamagazine.com.br');
 define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
