@@ -1,3 +1,40 @@
+<?php 
+
+ 
+// Cria chamada para aplicacao
+$facebook = new Facebook(array(
+  'appId'  => '622330351110346',
+  'secret' => 'c68c23c630c52dd1bafb700f6798dc46',
+));
+
+
+// Get User ID
+// See if there is a user from a cookie
+$user = $facebook->getUser();
+
+
+if ($user) {
+  try {
+    // Proceed knowing you have a logged in user who's authenticated.
+    $user_profile = $facebook->api('/me');
+    $_SESSION['fb_id'] = $user_profile['id'];
+    $_SESSION['fb_name'] = $user_profile['name'];
+    $_SESSION['fb_email'] = $user_profile['email']; 
+  
+   
+
+  } catch (FacebookApiException $e) {
+      
+    //echo '<pre>'.htmlspecialchars(print_r($e, true)).'</pre>';
+    $user = null;
+  }
+} else {
+    unset($_SESSION);
+}
+ 
+
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
